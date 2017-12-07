@@ -16,7 +16,7 @@ public class Topping {
     private final String type;
     private final int price;
 
-    Topping(String type, int price) {
+    public Topping(String type, int price) {
         this.type = type;
         this.price = price;
     }

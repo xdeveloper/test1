@@ -16,21 +16,8 @@ public class PizzaToppings {
 
     private static Topping[][] results;
 
-    public static void run() {
-        Topping[] toppings = {
-                new Topping("сир", 10),
-                new Topping("бекон", 20),
-                new Topping("помідори", 30),
-                new Topping("тунець", 50),
-                new Topping("салямі", 40),
-                new Topping("кетчуп", 25),
-                new Topping("цибуля", 35),
-                new Topping("моцарела", 55),
-                new Topping("огірок кислий", 25),
-                new Topping("ананас", 45),
-        };
-
-        search(80, 85, toppings);
+    public static void run(int low, int high, Topping[] toppings) {
+        search(low, high, toppings);
         report();
     }
 
